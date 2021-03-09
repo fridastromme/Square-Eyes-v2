@@ -1,0 +1,224 @@
+body {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* GLOBAL STYLES */
+
+/* Typefaces */
+h1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3rem;
+	color: #373736;
+}
+
+h2 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.6rem;
+	color: #373736;
+}
+
+h3 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: #373736;
+}
+
+h4 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3rem;
+	color: #373736;
+}
+
+h5 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1rem;
+	color: #373737;
+}
+
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #373736;
+}
+
+/* Navigation and links */
+
+a {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #373736;
+	text-decoration: none;
+}
+
+a:not(.button):hover {
+	color: #ff5d1c;
+}
+
+.active {
+	color: #ff5d1c;
+}
+
+li {
+	list-style-type: none;
+}
+
+nav li {
+	margin-top: 20px;
+	display: inline-block;
+	font-weight: bold;
+	padding: 2px 0;
+	margin-right: 40px;
+}
+
+/* Buttons */
+
+.button {
+	border: 3px solid #ff5d1c;
+	background-color: #ff5d1c;
+	padding: 12px 38px;
+	color: white;
+	border-radius: 25px 25px 25px 5px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 3px 10px #c4c4c4;
+}
+
+/* Header */
+header {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr;
+	grid-template-areas: logo__wrap, nav;
+	box-sizing: border-box;
+	background-color: white;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: right;
+	z-index: 1;
+}
+
+.logo__wrap,
+.logo {
+	width: 70%;
+	text-align: left;
+	margin-left: 40px;
+}
+
+/* Footer */
+
+footer {
+	position: sticky;
+	width: 100vw;
+	box-sizing: border-box;
+	display: inline-block;
+	padding-left: 120px;
+	background: #ffffff;
+	color: white;
+	font-size: 16px;
+	font-weight: lighter;
+	box-shadow: 3px 3px 10px #373736;
+	z-index: 1;
+}
+
+footer > nav li {
+	margin-top: 8px;
+}
+
+.footer-link {
+	display: block;
+	text-align: left;
+	padding-bottom: 0px;
+}
+
+.footer-group {
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+#ft-link {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: lighter;
+	margin-right: 30px;
+}
+
+/* Icons in footer*/
+
+.icon-link {
+	display: inline-block;
+}
+
+.facebook {
+	max-width: 35px;
+}
+
+.instagram {
+	max-width: 35px;
+}
+
+.youtube {
+	max-width: 47px;
+}
+
+.twitter {
+	max-width: 35px;
+}
+
+/* INDIVIDUAL PAGE STYLES */
+
+/* FRONT PAGE */
+/* Featured */
+
+#container__featured {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.featured__container-image {
+	overflow: hidden;
+}
+
+.featured__headings h1,
+.featured__headings h2,
+.featured__headings h3 {
+	position: relative;
+	bottom: 25rem;
+	left: 40px;
+	color: white;
+	text-shadow: 0px 5px 20px #000000;
+}
+
+.featured__headings h1 {
+	font-size: 2rem;
+}
+
+.featured__headings h2 {
+	font-size: 5rem;
+	margin-top: 0px;
+}
+
+/* New titles */
+
+#new-titles {
+	padding-bottom: 90px;
+	background-color: white;
+	box-shadow: 0px 3px 10px #373736;
+	padding: 40px;
+}
+
+/* Presentation */
+
+#presentation {
+	background-image: url(/images/movie-clapper.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40rem;
+	padding: 40px;
+}

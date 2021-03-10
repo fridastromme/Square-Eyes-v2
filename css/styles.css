@@ -88,8 +88,14 @@ nav li {
 	box-shadow: 0px 3px 10px #c4c4c4;
 }
 
+.button:hover {
+	border-color: #ff5d1c;
+	background-color: transparent;
+	color: #ff5d1c;
+}
+
 /* Header */
-header {
+header:not(.sign-up__header) {
 	display: grid;
 	grid-template-columns: 0.5fr 2fr;
 	grid-template-areas: logo__wrap, nav;
@@ -170,12 +176,24 @@ footer > nav li {
 	max-width: 35px;
 }
 
+/* Boxes */
+.white-box {
+	background-color: white;
+	max-width: 40%;
+	filter: drop-shadow(0px 3px 10px #373737);
+	margin: auto;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding: 1rem 1rem 4rem 1rem;
+	border-radius: 10px 50px 50px 50px;
+}
+
 /* INDIVIDUAL PAGE STYLES */
 
 /* FRONT PAGE */
 /* Featured */
 
-#container__featured {
+.container__featured {
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
@@ -206,7 +224,7 @@ footer > nav li {
 
 /* New titles */
 
-#new-titles {
+.new-titles {
 	padding-bottom: 90px;
 	background-color: white;
 	box-shadow: 0px 3px 10px #373736;
@@ -221,4 +239,250 @@ footer > nav li {
 	background-size: cover;
 	height: 40rem;
 	padding: 40px;
+}
+
+#presentation__text {
+	position: relative;
+	width: 32%;
+	left: 45rem;
+	top: 5rem;
+}
+
+#presentation__text h2 {
+	color: white;
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+
+#presentation__text p {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+#presentation .button {
+	position: relative;
+	top: 1rem;
+	float: right;
+}
+
+/* MOVIES PAGE */
+
+.movie-page__background {
+	background-color: #373837;
+}
+
+.movie-page__background .container__featured {
+	height: 20rem;
+}
+
+.movie-page__background .new-titles {
+	background-color: #373837;
+}
+
+#categories {
+	background-color: #373837;
+	box-shadow: 0px 3px 10px #373736;
+	padding: 40px;
+}
+
+/* SIGN UP PAGES */
+
+.sign-up__header {
+	height: 5rem;
+}
+
+.sign-up__header .logo,
+.sign-up__header .logo {
+	width: 10%;
+	margin-top: 1rem;
+}
+
+#createview {
+	background-image: linear-gradient(#ffa987, #ff5d1c);
+	max-height: fit-content;
+	min-height: 100vh;
+}
+
+#createprod {
+	background-image: linear-gradient(#7b8576, #3141d4);
+	max-height: fit-content;
+	min-height: 100vh;
+}
+
+#createview .white-box,
+#createprod .white-box {
+	position: relative;
+	bottom: 2.3rem;
+}
+
+.sign-up__back {
+	position: relative;
+	bottom: 3rem;
+	right: 1rem;
+}
+
+.sign-up__back a {
+	color: white;
+}
+
+.sign-up__back a:hover {
+	color: #373837;
+}
+
+.sign-up__icon {
+	background-image: url('/images/producer-chair.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+.sign-up__icon-2 {
+	background-image: url('/images/viewer-glasses.png');
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 100px;
+	margin: auto;
+}
+
+/* FORMS */
+
+fieldset {
+	width: 100%;
+	border: none;
+}
+
+input[type='email'],
+input[type='password'] {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: inline;
+	max-width: 100%;
+	height: 35px;
+	background-color: #ffa987;
+	border: none;
+	padding-left: 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+legend {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	color: #373736;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.form__signin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	max-width: 367px;
+}
+
+.form > fieldset {
+	display: inline;
+	text-align: left;
+}
+
+.forgot {
+	text-align: center;
+	margin-top: 22px;
+}
+
+/* Create accounts specifically */
+
+input[type='checkbox'] {
+	display: inline;
+}
+
+legend {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.1rem;
+	margin-bottom: 3px;
+}
+
+#create {
+	margin-left: 270px;
+}
+
+.sign-up__text {
+	max-width: 367px;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: left;
+}
+
+.sign-up__text > h1 {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+}
+
+.sign-up__input {
+	width: 100%;
+	margin: auto;
+}
+
+.sign-up__input > input {
+	background-color: #889fca;
+	width: 90%;
+}
+
+.sign-up__input > input:focus {
+	outline: none;
+	background-color: #aec5f2;
+}
+
+.sign-up__input-2 > input {
+	background-color: #fead8d;
+	width: 90%;
+}
+
+.sign-up__input-2 > input:focus {
+	outline: none;
+	background-color: #ffc3ac;
+}
+
+input[type='checkbox'] + label {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-left: 5px;
+	color: #373837;
+}
+
+.sign-up__checkbox {
+	display: block;
+	margin: auto;
+	min-width: 0;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+#sign-up__terms {
+	color: #3141d4;
+}
+
+#sign-up__terms:hover {
+	color: #7984eb;
+}
+
+#sign-up__terms-2 {
+	color: #ff5d1c;
+}
+
+#sign-up__terms-2:hover {
+	color: #fc8b5e;
+}
+
+.sign-up__button {
+	width: 200px;
+	margin: auto;
+	margin-top: 30px;
 }

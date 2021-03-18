@@ -38,11 +38,11 @@
         <form action="submit.php" method="POST" class="sign-up__form">
           <div class="sign-up__input">
           <legend>Your email</legend>
-          <input type="email" name="email"/>
+          <input type="email" name="email" id="email"/>
           <legend>Your password</legend>
-          <input type="password" name="password"/>
+          <input type="password" name="password" id="password"/>
           <legend>Re-enter password</legend>
-          <input type="password" name="password-reenter"/>
+          <input type="password" name="password-reenter" id="password-reenter"/>
         </div>
         <div class="sign-up__checkbox">
         <input type="checkbox" name="recommendations" value="recommendations" id="recommendations"><label for="recommendations">Please send me news and recommendations via email.</label>
@@ -50,14 +50,16 @@
         <div class="sign-up__checkbox">
         <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the <a href="#" id="sign-up__terms">terms of use</a>.</label>
         </div>
-
       </div>
+      <button id="submit">Submit</button>
     </fieldset>
-    <div class="sign-up__button">
+<!--     <div class="sign-up__button">
     <a class="button" href="producer-profile.html">Sign up now</a></li>
-    </div>
+    </div> -->
       </form>
     </div>
   </section>
 </main>
+<script src="js/create-account.js"></script>
+</body>
 </html>

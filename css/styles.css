@@ -1987,19 +1987,12 @@ submit:hover {
 	nav .button {
 		position: relative;
 		top: 1rem;
-		left: 1rem;
+		left: 2rem;
 	}
 
 	#search {
-		position: relative;
-		right: 3rem;
-		width: 35%;
-	}
+		margin-bottom: 2rem;
 
-	.icon__search {
-		position: relative;
-		top: -2rem;
-		left: 1rem;
 	}
 
 	.overlay-box__signup {

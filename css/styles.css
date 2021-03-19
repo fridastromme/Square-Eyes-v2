@@ -62,11 +62,11 @@ a {
 }
 
 a:not(.button):hover {
-	color: #ff5d1c;
+	color: #D63D00;
 }
 
 .active {
-	color: #ff5d1c;
+	color: #D63D00;
 }
 
 li {
@@ -252,7 +252,7 @@ footer > nav li {
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
-#ft-link {
+.ft-link {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: lighter;
 	margin-right: 30px;
@@ -443,7 +443,7 @@ footer > nav li {
 	margin: 0px;
 }
 
-#title {
+.title {
 	position: relative;
 	padding-top: 46%;
 	line-break: normal;
@@ -454,7 +454,7 @@ footer > nav li {
 	margin-bottom: 2px;
 }
 
-#creator {
+.creator {
 	position: relative;
 	padding-left: 12px;
 	color: white;
@@ -486,8 +486,8 @@ footer > nav li {
 	color: #ffa987;
 }
 
-#title:hover,
-#creator:hover {
+.title:hover,
+.creator:hover {
 	color: #ffa987;
 }
 
@@ -1775,7 +1775,7 @@ input[type='checkbox'] + label {
 	display: inline;
 	margin: 0px;
 	padding: 0px;
-	color: #ff5d1c;
+	color: #D63D00;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 200;
 	font-size: 0.9rem;
@@ -1791,7 +1791,7 @@ input[type='checkbox'] + label {
 }
 
 .dashlink2:hover {
-	color: #ff5d1c;
+	color: #D63D00;
 }
 
 /* comment section bubbles viewer profile */
@@ -1840,7 +1840,7 @@ input[type='checkbox'] + label {
 }
 
 #view-link:hover {
-	color: #ff5d1c;
+	color: #D63D00;
 }
 
 

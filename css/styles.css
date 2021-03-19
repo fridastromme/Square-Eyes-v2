@@ -992,7 +992,7 @@ h5 {
 }
 
 #watchmovie .link {
-	color: #ffa987;
+	color: #FFB699;
 }
 
 #watchmovie .link:hover {
@@ -1001,7 +1001,7 @@ h5 {
 
 #watchmovie__change {
 	font-size: 0.9rem;
-	color: rgb(172, 172, 172);
+	color: #FFB699;
 }
 
 #watchmovie__change:hover {

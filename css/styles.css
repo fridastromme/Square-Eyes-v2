@@ -1019,6 +1019,7 @@ h5 {
 
 #watchmovie__titles {
 	padding-bottom: 2rem;
+	padding-right: 3rem;
 	border-right: solid 2px white;
 	margin-bottom: 3rem;
 }
@@ -2207,6 +2208,22 @@ submit:hover {
 				margin-right: 1rem;
 				margin-left: 1rem;
 			}
+
+			#watchmovie__pay{
+				grid-template-areas: "watchmovie__titles" "watchmovie__form";
+			}
+
+			#watchmovie__titles {
+				padding-right: 0rem;
+				padding-bottom: 3rem;
+				border-right: none;
+				margin-bottom: 3rem;
+				margin: auto;
+			}
+
+			#watchmovie__form {
+				padding-left: 0rem;
+
 		}
 
 		@media only screen and (max-width: 500px) {

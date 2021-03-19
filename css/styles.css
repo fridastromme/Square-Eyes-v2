@@ -885,7 +885,7 @@ footer > nav li {
 
 .view-all-white:hover,
 .view-all-white__2:hover {
-	color: #ffa987;
+	color: #ffa987 !important;
 }
 
 .categories-title__movie {

@@ -85,21 +85,37 @@ header label {
 	display: none;
 }
 
+
 #search {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	display: block;
+	display: inline-block;
 	width: 10%;
 	height: 30px;
 	background-color: #ffa987;
 	border: none;
 	padding-left: 15px;
 	border-radius: 5px;
-	margin-top: 3rem;
+	margin-right: 0.3rem;
 }
 
 #search:focus {
 	outline: none;
 	background-color: #ffc3ac;
+}
+
+.icon__search {
+	position: relative;
+	top: 14px;
+	display: inline-block;
+	background-image: url('/images/search-icon.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	margin-right: 2rem;
+}
+
+.icon__search:hover {
+	background-image: url('/images/search-icon-red.png');
 }
 
 /* Buttons */
@@ -123,8 +139,61 @@ header label {
 	color: #ff5d1c;
 }
 
+.blue {
+	border: 3px solid #134196;
+	background-color: #134196;
+	border-radius: 5px 25px 25px 25px;
+	box-shadow: 0px 3px 10px #373736;
+}
+
+.blue:hover {
+	border-color: #134196;
+	background-color: transparent;
+	color: #134196;
+}
+
+.light-red {
+	border: 3px solid #ffa987;
+	background-color: #ffa987;
+	color: #373837;
+	padding: 12px 38px;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 3px 10px #373736;
+}
+
+.light-red:hover {
+    border: 3px solid #ffa987;
+	background-color: transparent;
+	color: #ffa987 !important;
+}
+
+.round {
+	border-radius: 25px;
+}
+
+.white {
+	box-shadow: 0px 3px 10px #c4c4c4;	
+}
+
+.prod-back  .button {
+	position: absolute;
+	right: 0;
+	margin: 2rem 2rem 0rem 0rem;
+	box-shadow: 0px 3px 10px #373736;
+}
+
+.prod-profile  .button {
+	position: inherit;
+	white-space: nowrap;
+}
+
 /* Header */
 header:not(.sign-up__header) {
+	position: sticky;
 	box-sizing: border-box;
 	background-color: white;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
@@ -147,7 +216,10 @@ header:not(.sign-up__header) {
 	max-width: 130px;
 }
 
-
+.signin__link {
+	cursor: pointer;
+	white-space: nowrap;
+}
 
 /* Footer */
 
@@ -162,7 +234,7 @@ footer {
 	font-size: 16px;
 	font-weight: lighter;
 	box-shadow: 3px 3px 10px #373736;
-	z-index: 1;
+	z-index: 10;
 }
 
 footer > nav li {
@@ -225,6 +297,47 @@ footer > nav li {
 /* FRONT PAGE */
 /* Featured */
 
+#front-page{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "container__featured, presentation";
+}
+
+.overlay-box__signup {
+	position: absolute;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.87);
+	width: 30%;
+	padding: 90px 0;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 20px;
+	margin-right: 20px;
+	border-radius: 50px;
+	z-index: 100;
+}
+
+.overlay-box__signup h2 {
+	font-size: 2rem;
+	margin-bottom: 0.8rem;
+}
+
+.overlay-box__signup p {
+	margin-bottom: 1.5rem;
+}
+
+
+.overlay-box__signup h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.overlay-box__signup .button {
+	display: inline-block;
+	margin: 0.3rem 1.5rem 0rem 0rem;
+}
+
+
 .container__featured {
 	height: 100vh;
 	width: 100vw;
@@ -254,14 +367,135 @@ footer > nav li {
 	margin-top: 0px;
 }
 
+.featured__headings h1:hover,
+.featured__headings h2:hover,
+.featured__headings h3:hover {
+	color: #ffa987;
+}
+
+
 /* New titles */
 
+
 .new-titles {
+	position: relative;
 	padding-bottom: 90px;
 	background-color: white;
 	box-shadow: 0px 3px 10px #373736;
-	padding: 40px;
+	z-index: 100;
 }
+
+.new-titles > h2 {
+	font-weight: normal;
+	position: relative;
+	display: inline-block;
+	left: 40px;
+	padding-top: 50px;
+	margin-bottom: 10px;
+}
+
+
+.new {
+	display: grid;
+	width: 85%;
+	padding: 0px;
+	grid-template-areas:
+		'news news news news'
+		'new-1 new-2 new-3 new-4';
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+#new-1 {
+	background-image: url('/images/kicking-the-fog-1.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#new-2 {
+	background-image: url('/images/preys-1.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#new-3 {
+	background-image: url('/images/hunters-from-outer-space-1.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#new-4 {
+	background-image: url('/images/fire-job-1.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#title {
+	position: relative;
+	padding-top: 46%;
+	line-break: normal;
+	padding-left: 12px;
+	color: white;
+	font-size: 1.2rem;
+	text-shadow: 0px 5px 15px #000000;
+	margin-bottom: 2px;
+}
+
+#creator {
+	position: relative;
+	padding-left: 12px;
+	color: white;
+	font-size: 0.7rem;
+	text-shadow: 0px 5px 15px #000000;
+}
+
+#title2 {
+	position: relative;
+	padding-top: 38%;
+	padding-left: 12px;
+	color: white;
+	font-size: 1.3rem;
+	text-shadow: 0px 5px 15px #000000;
+	margin-bottom: 2px;
+}
+
+#creator2 {
+	position: relative;
+	padding-top: 0%;
+	padding-left: 12px;
+	color: white;
+	font-size: 0.8rem;
+	text-shadow: 0px 5px 15px #000000;
+}
+
+#title2:hover,
+#creator2:hover {
+	color: #ffa987;
+}
+
+#title:hover,
+#creator:hover {
+	color: #ffa987;
+}
+
+#view-all {
+	position: relative;
+	top: 1.5rem;
+	float: right;
+}
+
 
 /* Presentation */
 
@@ -274,10 +508,10 @@ footer > nav li {
 }
 
 #presentation__text {
-	position: relative;
+	float: right;
 	width: 32%;
-	left: 45rem;
-	top: 5rem;
+	margin-right: 80px;
+	margin-top: 40px;
 }
 
 #presentation__text h2 {
@@ -297,6 +531,140 @@ footer > nav li {
 	float: right;
 }
 
+/* Movie info (both front and movie page) */
+
+.movie-info__featured {
+	position: absolute;
+	max-width: 500px;
+	background-color: #373837;
+	filter: drop-shadow(0px 3px 10px #292929);
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 20px;
+	padding-bottom: 70px;
+	margin-left: 30px;
+	margin-right: 30px;
+	left: 0px;
+	border-radius: 50px 50px 50px 10px;
+	z-index: 100;
+}
+
+.movie-info__image {
+	width: 100%;
+	border-radius: 50px 50px 0px 0px;
+	margin-bottom: 20px;
+}
+
+.movie-info__image-container {
+	max-width: 100%;
+}
+
+.movie-info__go-back {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 10%;
+}
+
+.movie-info__container {
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.movie-info__featured > .light-red {
+	position: absolute;
+	right: 2rem;
+	margin-top: 2.5rem;
+}
+
+.movie-info__price > h5{
+	display: inline-block;
+}
+
+.movie-info__container > h2,
+.movie-info__container > h3,
+.movie-info__container > h4,
+.movie-info__container > h5 {
+	color: white;
+}
+
+.movie-info__title {
+	font-size: 2.4rem;
+}
+
+.movie-info__creator {
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+
+.movie-info__line {
+	border: none;
+	border-top: 3px solid white;
+	position: relative;
+	bottom: 14px;
+}
+
+.movie-info__year {
+	display: inline;
+	margin-right: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.8rem;
+}
+
+.movie-info__category {
+	display: inline;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.8rem;
+}
+
+.movie-info__viewer-count {
+	display: inline;
+	margin-left: 5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.8rem;
+	font-weight: normal;
+	position: static;
+	padding-left: 0px;
+	cursor: default;
+}
+
+.movie-info__viewer-count-icon {
+	position: relative;
+	left: 130px;
+	margin-top: 0px;
+}
+
+.movie-info__text {
+	position: relative;
+	left: -130px;
+	color: white;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: -20px;
+	font-size: 0.8rem;
+	line-height: 1.4;
+}
+
+.movie-info__price {
+	position: relative;
+	color: white;
+	bottom: 50px;
+	left: 50px;
+}
+
+.movie-info__price > h5 {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+.movie-info__help {
+	position: relative;
+	left: 59px;
+    top: 34px;
+}
+
 /* MOVIES PAGE */
 
 .movie-page__background {
@@ -311,10 +679,185 @@ footer > nav li {
 	background-color: #373837;
 }
 
+.new-titles-movie{
+	position: sticky;
+	padding: 3rem 0rem 3rem 0rem;
+	box-shadow: 0px 3px 10px #000000;
+	z-index: 1;
+}
+
+.featured__headings-movies h1,
+.featured__headings-movies h2,
+.featured__headings-movies h3 {
+	position: relative;
+	bottom: 40rem;
+	left: 40px;
+	color: white;
+	text-shadow: 0px 5px 20px #000000;
+}
+
+.featured__headings-movies h1:hover,
+.featured__headings-movies h2:hover,
+.featured__headings-movies h3:hover {
+	color: #ffa987;
+}
+
+#new {
+	margin: auto;
+}
+
+#movie-news{
+	color: #fff;
+	font-weight: normal;
+	margin-left: 40px;
+	margin-bottom: 1rem;
+}
+
 #categories {
 	background-color: #373837;
 	box-shadow: 0px 3px 10px #373736;
 	padding: 40px;
+}
+
+#pop-1 {
+	background-image: url('/images/friends-of-the-universe-1.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#pop-2 {
+	background-image: url('/images/loss-of-robots.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#pop-3 {
+	background-image: url('/images/precious-dreams.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+#pop-4 {
+	background-image: url('/images/spiders-with-a-goal.jpg');
+	background-size: cover;
+	width: 280px;
+	height: 179px;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+.categories {
+	background-color: #373736;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#section-categories {
+	max-width: 1251px;
+	margin: auto;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+.categories-title {
+	color: white;
+	font-size: 1.1rem;
+	margin-top: 13px;
+	margin-bottom: 10px;
+}
+
+#view-all {
+	position: relative;
+	float: right;
+	top: 30px;
+}
+
+#view-all-white {
+	position: relative;
+	float: right;
+	top: 30px;
+	color: white;
+}
+
+#view-all-white__2 {
+	position: relative;
+	float: right;
+	top: 120px;
+	color: white;
+}
+
+#view-all-white:hover,
+#view-all-white__2:hover {
+	color: #ffa987;
+}
+
+.categories-title__movie {
+	display: inline-block;
+	height: 150px;
+	background-image: linear-gradient(-130deg, #7b8576, #000000);
+	background-repeat: no-repeat;
+	margin-bottom: 25px;
+	margin-left: -3px;
+	width: 240px;
+}
+
+.categories-title__row {
+	margin-bottom: 20px;
+}
+
+#header-cat {
+	color: white;
+	padding-top: 30px;
+}
+
+#round-one {
+	border-radius: 5px 0px 0px 5px;
+}
+
+#round-two {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.categories-title__movie > h4,
+h5 {
+	color: white;
+	position: relative;
+	top: 95px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.categories-title__movie > h4:hover,
+.categories-title__movie > h5:hover {
+	color: #ffa987;
+}
+
+.categories-title__movie > h4 {
+	font-size: 1.3rem;
+	margin-bottom: 3px;
+}
+
+.categories-title__movie > h5 {
+	font-size: 0.8rem;
+}
+
+#view-all-movie2 {
+	color: white;
+	position: relative;
+	left: 1190px;
+}
+
+#view-all-movie2:hover {
+	color: #ffa987;
 }
 
 /* SIGN UP PAGES */
@@ -1146,9 +1689,13 @@ button:hover {
 		display: block;
 	}
 
+	ul label {
+		display: none;
+	}
+
 	#hamburger-menu:checked ~ nav{
 		display: block;
-		white-space: pre-wrap;
+		white-space: pre-line;
 		text-align: right;
 	  }
 
@@ -1157,4 +1704,37 @@ button:hover {
 		top: 1rem;
 		left: 1rem;
 	}
+
+	#search {
+		position: relative;
+		right: 3rem;
+		width: 35%;
+	}
+
+	.icon__search {
+		position: relative;
+		top: -2rem;
+		left: 1rem;
+
+	}
+
+	.overlay-box__signup{
+		width: fit-content;
+		margin-left: 20px;
+		padding: 45px;
+	}
+
+	.overlay-box__signup h2{
+		font-size: 1.5rem;
+	}
+
+	.overlay-box__signup h3{
+		font-size: 1.2rem;
+	}
+	.overlay-box__signup p{
+		font-size: 0.85rem;
+		margin-bottom: 0.8rem;
+	}
+
 }
+

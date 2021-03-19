@@ -103,7 +103,8 @@ header label {
 	background-color: #ffc3ac;
 }
 
-.movie-page__background #search {
+.movie-page__background #search,
+.watch #search {
 	width: 30%;
 }
 
@@ -216,6 +217,7 @@ header:not(.sign-up__header) {
 	float: left;
 	text-align: left;
 	margin-left: 1rem;
+	margin-top: 0.2rem;
 }
 
 .logo {
@@ -1105,7 +1107,7 @@ input[type='number'] {
 	margin-top: 1rem;
 }
 
-#whoareyou {
+.whoareyou {
 	background-image: linear-gradient(#545e4f, #000000);
 	max-height: fit-content;
 	min-height: 100vh;
@@ -1966,7 +1968,7 @@ submit:hover {
 	#hamburger-png {
 		cursor: pointer;
 		display: inline;
-		margin-top: 0.6rem;
+		margin-top: 1rem;
 		margin-right: 1rem;
 		max-width: 70px;
 	}

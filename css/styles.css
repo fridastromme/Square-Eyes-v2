@@ -491,7 +491,7 @@ footer > nav li {
 	color: #ffa987;
 }
 
-#view-all {
+.view-all {
 	position: relative;
 	top: 2rem;
 	float: right;
@@ -786,7 +786,7 @@ footer > nav li {
 	margin: auto;
 }
 
-#movie-news{
+.movie-news{
 	color: #fff;
 	font-weight: normal;
 	margin-left: 40px;
@@ -855,13 +855,13 @@ footer > nav li {
 	margin-bottom: 10px;
 }
 
-#view-all {
+.view-all {
 	position: relative;
 	float: right;
 	top: 30px;
 }
 
-#view-all-white {
+.view-all-white {
 	position: relative;
 	float: right;
 	top: 30px;
@@ -875,7 +875,7 @@ footer > nav li {
 	color: white;
 }
 
-#view-all-white:hover,
+.view-all-white:hover,
 #view-all-white__2:hover {
 	color: #ffa987;
 }
@@ -1950,7 +1950,7 @@ submit:hover {
 		width: 220px;
 	}
 
-	#view-all {
+	.view-all {
 		position: relative;
 		top: 3rem;
 		float: right;
@@ -1983,7 +1983,7 @@ submit:hover {
 		width: 270px;
 	}
 
-	#view-all {
+	.view-all {
 		position: relative;
 		top: 1.5rem;
 		float: right;

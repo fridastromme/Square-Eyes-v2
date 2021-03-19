@@ -62,7 +62,7 @@ a {
 }
 
 a:not(.button):hover {
-	color: #D63D00;
+	color: #fead8d;
 }
 
 .active {
@@ -1801,7 +1801,7 @@ input[type='checkbox'] + label {
 }
 
 .dashlink2:hover {
-	color: #D63D00;
+	color: #fead8d;
 }
 
 /* comment section bubbles viewer profile */
@@ -1850,7 +1850,7 @@ input[type='checkbox'] + label {
 }
 
 #view-link:hover {
-	color: #D63D00;
+	color: #fead8d;
 }
 
 

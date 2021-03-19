@@ -379,6 +379,7 @@ footer > nav li {
 
 .new-titles {
 	position: relative;
+	padding-top: 1rem;
 	padding-bottom: 90px;
 	background-color: white;
 	box-shadow: 0px 3px 10px #373736;
@@ -397,7 +398,7 @@ footer > nav li {
 
 .new {
 	display: grid;
-	width: 85%;
+	max-width: 80%;
 	padding: 0px;
 	grid-template-areas:
 		'news news news news'
@@ -409,7 +410,7 @@ footer > nav li {
 #new-1 {
 	background-image: url('/images/kicking-the-fog-1.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -418,7 +419,7 @@ footer > nav li {
 #new-2 {
 	background-image: url('/images/preys-1.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -427,7 +428,7 @@ footer > nav li {
 #new-3 {
 	background-image: url('/images/hunters-from-outer-space-1.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -436,7 +437,7 @@ footer > nav li {
 #new-4 {
 	background-image: url('/images/fire-job-1.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -492,7 +493,7 @@ footer > nav li {
 
 #view-all {
 	position: relative;
-	top: 1.5rem;
+	top: 2rem;
 	float: right;
 }
 
@@ -665,6 +666,71 @@ footer > nav li {
     top: 34px;
 }
 
+/* WHO ARE YOU-PAGE */
+
+.overlay-box__whoareyou{
+	position: inherit;
+	background-color: white;
+	width: 40%;
+	filter: drop-shadow(0px 3px 10px #373737);
+	margin: auto;
+	padding: 4rem 5rem 7rem 4rem;
+	border-radius: 10px 50px 50px 50px;
+}
+
+.overlay-box__whoareyou > .sign-up__back {
+	bottom: 6rem;
+	right: 3.5rem;
+}
+
+.whoareyou__text {
+	width: 80%;
+	margin: auto;
+}
+
+.overlay-box__whoareyou h1 {
+	margin-bottom: 1.5rem;
+}
+
+.overlay-box__whoareyou h2 {
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
+
+}
+
+.overlay-box__whoareyou p {
+	margin-bottom: 2rem;
+}
+
+#whoareyou__p {
+	padding-bottom: 1rem;
+}
+
+.whoareyou__buttons{
+	text-align: center;
+}
+
+.whoareyou__text .round{
+	margin: 0rem 1rem 0rem 1rem;
+}
+
+/* Sign in page */
+
+.signin {
+	margin-bottom: 2rem;
+}
+
+.signin p {
+	margin-bottom: 0rem;
+}
+
+.signin-forgot{
+	width: 11.5rem;
+	margin: auto;
+	margin-top: 2rem;
+}
+
 /* MOVIES PAGE */
 
 .movie-page__background {
@@ -696,6 +762,20 @@ footer > nav li {
 	text-shadow: 0px 5px 20px #000000;
 }
 
+.featured__headings-movies h1 {
+	font-size: 1.5rem;
+}
+
+.featured__headings-movies h2 {
+	font-size: 4rem;
+	margin-top: 0px;
+}
+
+.featured__headings-movies h3{
+	font-size: 1.5rem;
+	margin-top: 0px;
+}
+
 .featured__headings-movies h1:hover,
 .featured__headings-movies h2:hover,
 .featured__headings-movies h3:hover {
@@ -722,7 +802,7 @@ footer > nav li {
 #pop-1 {
 	background-image: url('/images/friends-of-the-universe-1.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -731,7 +811,7 @@ footer > nav li {
 #pop-2 {
 	background-image: url('/images/loss-of-robots.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -740,7 +820,7 @@ footer > nav li {
 #pop-3 {
 	background-image: url('/images/precious-dreams.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -749,7 +829,7 @@ footer > nav li {
 #pop-4 {
 	background-image: url('/images/spiders-with-a-goal.jpg');
 	background-size: cover;
-	width: 280px;
+	width: 250px;
 	height: 179px;
 	border-radius: 5px;
 	margin: 0px;
@@ -860,16 +940,175 @@ h5 {
 	color: #ffa987;
 }
 
+/* PAY FOR MOVIE SITE */
+
+
+#watchmovie__pay{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "watchmovie__titles watchmovie__form";
+	grid-gap: 2rem;
+	padding: 4rem;
+	background-color: #373736;
+}
+
+#watchmovie h1,
+#watchmovie h2,
+#watchmovie h3,
+#watchmovie h4,
+#watchmovie p,
+#watchmovie link {
+	color: white;
+}
+
+#watchmovie h1 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+#watchmovie h2 {
+	font-size: 3.5rem;
+}
+
+#watchmovie h3 {
+	font-size: 1.5rem;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	border-bottom: solid 2px white;
+	width: 80%;
+}
+
+#watchmovie__titles .movie-info__price {
+	bottom: 5.5rem;
+}
+
+#watchmovie__form {
+	padding-left: 4rem;
+}
+
+#watchmovie__form h2 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+#watchmovie .link {
+	color: #ffa987;
+}
+
+#watchmovie .link:hover {
+	color: #ffc7b1;
+}
+
+#watchmovie__change {
+	font-size: 0.9rem;
+	color: rgb(172, 172, 172);
+}
+
+#watchmovie__change:hover {
+	color: #ffc7b1;
+}
+
+#watchmovie__titles {
+	padding-bottom: 2rem;
+	border-right: solid 2px white;
+	margin-bottom: 3rem;
+}
+
+#watchmovie__inputform {
+	margin-top: 2rem;
+}
+
+#watchmovie__inputform label {
+	color: #fff;
+}
+
+#watchmovie__inputform .form-comment {
+	color: rgb(172, 172, 172);
+}
+
+input[type='number'] {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	height: 30px;
+	background-color: #ffa987;
+	border: none;
+	padding-left: 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.submit-3 {
+	display: block;
+	border: 3px solid #ffa987;
+	background-color: #ffa987;
+	padding: 12px 38px;
+	color: #373736;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 3px 10px #202020;
+	margin-top: 25px;
+}
+
+.submit-3:hover {
+	border-color: #ffa987;
+	background-color: transparent;
+	color: #ffa987;
+}
+
+/* WATCH MOVIE */
+
+#playbutton {
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 40%;
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-left: 65px solid #373737;
+	border-bottom: 40px solid transparent;
+	filter: drop-shadow(0px 3px 10px #636363ad);
+}
+
+#playbutton:hover {
+	border-left: 65px solid #ff5d1c;
+}
+
+#watchlater {
+	display: inline;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+	background-color: white;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 25px;
+	filter: drop-shadow(0px 3px 10px #636363ad);
+}
+
+.watch {
+	height: 100vh;
+}
+
+
 /* SIGN UP PAGES */
 
 .sign-up__header {
 	height: 5rem;
 }
 
-.sign-up__header .logo,
 .sign-up__header .logo {
 	width: 10%;
 	margin-top: 1rem;
+}
+
+#whoareyou {
+	background-image: linear-gradient(#7b8576, #000000);
+	max-height: fit-content;
+	min-height: 100vh;
 }
 
 #createview {
@@ -940,6 +1179,11 @@ input[type='password'] {
 	padding-left: 15px;
 	border-radius: 5px;
 	margin-bottom: 10px;
+}
+
+#createprod input[type='email'],
+#createprod input[type='password'] {
+	background-color: #889fca;
 }
 
 legend {
@@ -1021,6 +1265,7 @@ input[type='checkbox'] {
 
 input[type='checkbox'] + label {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: normal;
 	margin-left: 5px;
 	color: #373837;
 }
@@ -1033,19 +1278,19 @@ input[type='checkbox'] + label {
 	margin-bottom: 6px;
 }
 
-#sign-up__terms {
+.sign-up__terms {
 	color: #3141d4;
 }
 
-#sign-up__terms:hover {
+.sign-up__terms:hover {
 	color: #7984eb;
 }
 
-#sign-up__terms-2 {
+.sign-up__terms-2 {
 	color: #ff5d1c;
 }
 
-#sign-up__terms-2:hover {
+.sign-up__terms-2:hover {
 	color: #fc8b5e;
 }
 
@@ -1630,15 +1875,15 @@ input {
 .form-error {
 	display: none;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: tomato;
+	color: #ff5d1c;
 	margin-bottom: 1rem;
 }
 
-.success {
+.form-error-2 {
+	display: none;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 2rem;
-	margin: auto;
-	padding-bottom: 1rem;
+	color: #fc8b5e;
+	margin-bottom: 1rem;
 }
 
 .form-comment {
@@ -1646,7 +1891,7 @@ input {
 	color: gray;
 }
 
-button {
+.submit {
 	display: block;
 	border: 3px solid #ff5d1c;
 	background-color: #ff5d1c;
@@ -1662,16 +1907,99 @@ button {
 	margin-top: 25px;
 }
 
-button:hover {
+submit:hover {
 	border-color: #ff5d1c;
 	background-color: transparent;
 	color: #ff5d1c;
 }
 
+.submit-2 {
+	display: block;
+	border: 3px solid #134196;
+	background-color: #134196;
+	padding: 12px 38px;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 3px 10px #c4c4c4;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.submit-2:hover {
+	border-color: #134196;
+	background-color: transparent;
+	color: #134196;
+}
+
 
 /* Smaller screens */
+@media only screen and (max-width: 1400px) {
+
+	.sign-up__header .logo {
+		width: 12%;
+	}
+
+	#new-1,
+	#new-2,
+	#new-3,
+	#new-4{
+		width: 220px;
+	}
+
+	#view-all {
+		position: relative;
+		top: 3rem;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.sign-up__header .logo {
+		width: 15%;
+	}
+
+	.new {
+		display: grid;
+		margin: auto;
+		grid-template-areas:
+			'news'
+			'new-1'
+			'new-2'
+			'new-3'
+			'new-4';
+		row-gap: 15px;
+		justify-content: center;
+	}
+
+	#new-1,
+	#new-2,
+	#new-3,
+	#new-4{
+		width: 270px;
+	}
+
+	#view-all {
+		position: relative;
+		top: 1.5rem;
+		float: right;
+	}
+}
 
 @media only screen and (max-width: 800px) {
+
+	.sign-up__header .logo {
+		width: 20%;
+	}
+
+	.sign-up__back {
+		position: relative;
+		left: 80%;
+	}
 
 	#hamburger-png{
 		cursor: pointer;
@@ -1681,7 +2009,7 @@ button:hover {
 		max-width: 70px;
 	}
 
-	nav {
+	header nav {
 		display: none;
 	}
 
@@ -1732,9 +2060,152 @@ button:hover {
 		font-size: 1.2rem;
 	}
 	.overlay-box__signup p{
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 		margin-bottom: 0.8rem;
 	}
 
-}
+	.featured__container-image{
+		position: relative;
+		right: 20rem;
+	}
+
+	#presentation {
+		background-size: 600%;
+	}
+
+	#presentation__text{
+		width: 100%;
+		float: none;
+	}
+
+	#presentation__text > h2{
+		font-size: 3rem;
+	}
+	footer {
+		padding-top: 30px;
+		margin: 0px;
+	}
+	.footer-group {
+		display: block;
+		margin: auto;
+	}
+	.icon-link {
+		margin-top: 1rem;
+		text-align: left;
+	}
+
+	.categories-title__row{
+		width: 45%;
+		margin: auto;
+	}
+
+			/* profiles for mobile */
+
+			.prod-profile {
+				margin-top: 130px;
+				grid-column: 1/5;
+				grid-row: 1/2;
+				border-radius: 50px 50px 10px 10px !important;
+			}
+	
+			#upload {
+				position: relative;
+				left: 165px;
+				top: 65px;
+			}
+	
+			.prod-mymovies {
+				grid-column: 1/5;
+				grid-row: 2/3;
+				margin-top: 7px;
+			}
+			.prod-mylibrary {
+				grid-column: 1/5;
+				grid-row: 3/4;
+				margin-top: 7px;
+			}
+	
+			.prod-likedmovies {
+				grid-column: 1/5;
+				grid-row: 4/5;
+				margin-top: 10px;
+			}
+			.prod-discussion {
+				grid-column: 1/5;
+				grid-row: 5/6;
+				margin-top: 7px;
+			}
+			.settings {
+				grid-column: 1/5;
+				grid-row: 6/7;
+				margin-top: 7px;
+			}
+	
+			#title-profile-2 {
+				top: 98px;
+			}
+	
+			#creator-profile-2 {
+				top: 91px;
+			}
+	
+			.view-profile {
+				grid-column: 1/5;
+				grid-row: 2/3;
+				border-radius: 50px 50px 10px 10px !important;
+			}
+			.view-mylibrary {
+				grid-column: 1/5;
+				grid-row: 3/4;
+				margin-top: 7px;
+			}
+			.view-likedmovies {
+				grid-column: 1/5;
+				grid-row: 4/5;
+				margin-top: 7px;
+			}
+			.view-discussion {
+				grid-column: 1/5;
+				grid-row: 5/6;
+				margin-top: 7px;
+			}
+			#title-profile__hunters-2 {
+				position: relative;
+				padding-left: 12px;
+				top: 86px;
+				color: white;
+				font-size: 1.3rem;
+				text-shadow: 0px 5px 15px #000000;
+				margin-bottom: 2px;
+			}
+	
+			#creator-profile__hunters-2 {
+				position: relative;
+				padding-left: 12px;
+				top: 87px;
+				color: white;
+				font-size: 0.8rem;
+				text-shadow: 0px 5px 15px #000000;
+			}
+	
+			#heart__hunters {
+				position: relative;
+				top: -166px;
+			}
+
+			.white-box {
+				max-width: 100%;
+				margin-right: 1rem;
+				margin-left: 1rem;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.sign-up__header .logo {
+				width: 40%;
+			}
+		}
+
+
 

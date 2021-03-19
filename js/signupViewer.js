@@ -1,12 +1,12 @@
-const contact = document.querySelector(".success");
-const form = document.querySelector(".contact-form");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const password = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
 const passwordReenter = document.querySelector("#password__reenter");
 const passwordReenterError = document.querySelector("#password__reenter-error");
-const button = document.querySelector("#submit");
+const terms = document.querySelector("#terms");
+const termsError = document.querySelector("#termsError");
+const button = document.querySelector(".submit");
 
 function validateForm(event) {
     event.preventDefault();
@@ -38,9 +38,17 @@ function validateForm(event) {
         console.log("The re-entered password does not match the original.");
     }
 
+    if (terms.checked) {
+        termsError.style.display = "none";
+    } else {
+        termsError.style.display = "block";
+        console.log("The terms of use checkbox is unchecked.");
+    }
+
     if ((validateEmail(email.value)) &&
         (validatePassword(password.value)) &&
-        (passwordReenter.value === password.value)) {
+        (passwordReenter.value === password.value) &&
+        (terms.checked)) {
         window.location.href = "viewer-profile.html";
         } 
     }

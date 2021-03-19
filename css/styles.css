@@ -62,7 +62,7 @@ a {
 }
 
 a:not(.button):hover {
-	color: #fead8d;
+	color: #D63D00;
 }
 
 .active {

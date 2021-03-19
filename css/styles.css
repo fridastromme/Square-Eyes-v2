@@ -358,6 +358,14 @@ footer > nav li {
 	text-shadow: 0px 5px 20px #000000;
 }
 
+.featured__headings-watch h1 {
+	position: relative;
+	bottom: 48rem;
+	left: 40px;
+	color: white;
+	text-shadow: 0px 5px 20px #000000;
+}
+
 .featured__headings h1 {
 	font-size: 2rem;
 }

@@ -1140,6 +1140,10 @@ input[type='number'] {
 	filter: drop-shadow(0px 3px 10px #636363ad);
 }
 
+#watchlater__link {
+	white-space: nowrap;
+}
+
 .watch {
 	height: 100vh;
 }

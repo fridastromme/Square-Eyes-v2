@@ -48,6 +48,26 @@ p {
 
 /* Navigation and links */
 
+.skip a {
+	font-weight: bold;
+	color: #134196;
+	font-size: 1.2rem;
+    position: absolute;
+	margin-left: 1rem;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+	overflow: hidden;
+}
+ 
+.skip a:focus {
+position: static;
+width: auto;
+height: auto;
+}
+
+
 #hamburger-menu {
 	display: none;
 }
@@ -187,7 +207,7 @@ header label {
 	box-shadow: 0px 3px 10px #c4c4c4;
 }
 
-.prod-back .button {
+#prod-back .button {
 	position: absolute;
 	right: 0;
 	margin: 2rem 2rem 0rem 0rem;
@@ -1459,7 +1479,7 @@ input[type='checkbox']+label {
 	margin-bottom: 15px;
 }
 
-.prod-back {
+#prod-back {
 	background-image: url('/images/Producerprofile-background.jpg');
 	background-repeat: no-repeat;
 	width: 100%;
@@ -1633,7 +1653,7 @@ input[type='checkbox']+label {
 
 /* Viewer profile */
 
-.view-back {
+#view-back {
 	background-image: url('/images/film-tape.jpg');
 	background-repeat: no-repeat;
 	width: 100%;

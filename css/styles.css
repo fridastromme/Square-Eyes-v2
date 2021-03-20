@@ -1142,6 +1142,7 @@ input[type='number'] {
 
 #watchlater__link {
 	white-space: nowrap;
+	margin-top: 0rem;
 }
 
 .watch {
@@ -2133,6 +2134,11 @@ submit:hover {
 	#watchlater {
 		z-index: 100;
 	}
+
+	#watchlater__link {
+		margin-top: 1rem;
+	}
+
 
 	#playbutton {
 		z-index: 100;

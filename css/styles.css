@@ -359,6 +359,7 @@ footer>nav li {
 
 .featured__container-image {
 	overflow: hidden;
+	min-width: 100%;
 }
 
 .featured__headings h1, .featured__headings h2, .featured__headings h3 {

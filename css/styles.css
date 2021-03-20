@@ -86,7 +86,6 @@ header label {
 }
 
 #search {
-	position: inherit;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	display: inline-block;
 	width: 60%;
@@ -103,9 +102,12 @@ header label {
 	background-color: #ffc3ac;
 }
 
-.movie-page__background #search,
+.movie-page__background #search {
+	width: 10%;
+}
+
 .watch #search {
-	width: 30%;
+	width: 10%;
 }
 
 .icon__search {
@@ -1081,7 +1083,7 @@ input[type='number'] {
 
 #watchlater {
 	display: inline;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	margin-bottom: 2rem;
@@ -1998,17 +2000,6 @@ submit:hover {
 		left: 2rem;
 	}
 
-	#search {
-		position: relative;
-		top: 2rem;
-		margin-bottom: 2rem;
-		float: left;
-	}
-
-    .icon__search {
-		right: 1rem;
-		top: 2.8rem;
-	}
 
 	 .movie-page__background .icon__search {
 		right: 2.5rem;
@@ -2194,6 +2185,24 @@ submit:hover {
 	#watchmovie__form {
 		padding-left: 0rem;
 		margin-bottom: 2rem;
+	}
+
+	.movie-page__background .icon__search,
+	.watch .icon__search {
+		position: relative;
+		top: 14px;
+		left: 0rem;
+		display: inline-block;
+		background-image: url('/images/search-icon.png');
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+		margin-right: 2rem;
+	}
+
+	.movie-page__background #search,
+	.watch #search {
+		width: 40%;
 	}
 }
 

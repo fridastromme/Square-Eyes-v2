@@ -6,7 +6,7 @@ function validateForm(event) {
 	event.preventDefault();
 	if (validateCvv(cvv.value)) {
 		cvvError.style.display = "none";
-		window.location.href = "watch-movie.html";
+		window.location.href = "/purchase-confirmation.html";
 	} else {
 		cvvError.style.display = "block";
 		console.log("Please enter 3 digits.")

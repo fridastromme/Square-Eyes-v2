@@ -325,7 +325,7 @@ footer>nav li {
 	right: 0;
 	background-color: rgba(255, 255, 255, 0.87);
 	width: 30%;
-	padding: 90px 0;
+	padding: 80px 30px 40px 30px;
 	padding-left: 100px;
 	padding-right: 100px;
 	margin-top: 20px;
@@ -334,7 +334,25 @@ footer>nav li {
 	z-index: 100;
 }
 
-.overlay-box__signup h2 {
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.overlay-box__signup-link{
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.overlay-box__signup-link a {
+	font-weight: bold;
+	color: #134196;
+}
+
+.overlay-box__signup h1 {
 	font-size: 2rem;
 	margin-bottom: 0.8rem;
 }
@@ -343,7 +361,7 @@ footer>nav li {
 	margin-bottom: 1.5rem;
 }
 
-.overlay-box__signup h3 {
+.overlay-box__signup h2 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -364,7 +382,7 @@ footer>nav li {
 	min-width: 100vw;
 }
 
-.featured__headings h1, .featured__headings h2, .featured__headings h3 {
+.featured__headings h2, .featured__headings h3, .featured__headings h4 {
 	position: relative;
 	bottom: 25rem;
 	left: 40px;
@@ -380,13 +398,21 @@ footer>nav li {
 	text-shadow: 0px 5px 20px #000000;
 }
 
-.featured__headings h1 {
+.featured__headings h4 {
+	font-size: 2rem;
+}
+
+.featured__headings h3 {
+	font-size: 5rem;
+	margin-top: 0px;
+}
+
+.featured__headings h4 {
 	font-size: 2rem;
 }
 
 .featured__headings h2 {
-	font-size: 5rem;
-	margin-top: 0px;
+	font-size: 2rem;
 }
 
 .featured__headings h1:hover, .featured__headings h2:hover, .featured__headings h3:hover {
@@ -692,6 +718,7 @@ footer>nav li {
 }
 
 .overlay-box__whoareyou>.sign-up__back {
+	display: inline;
 	bottom: 6rem;
 	right: 3.5rem;
 }
@@ -1913,10 +1940,17 @@ submit:hover {
 	color: #134196;
 }
 
+/* Larger screens */
+
+@media only screen and (max-width: 1900px) {
+	#new1, #new2, #new3, #new4 {
+		width: 300px;
+	}
+}
 
 /* Smaller screens */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 100px) {
 	.sign-up__header .logo {
 		width: 12%;
 	}
@@ -2012,6 +2046,14 @@ submit:hover {
 		padding: 45px;
 	}
 
+	.hide {
+		display: block;
+	}
+
+	.show {
+		display: none;
+	}
+
 	.overlay-box__signup h2 {
 		font-size: 1.5rem;
 	}
@@ -2028,6 +2070,29 @@ submit:hover {
 	.featured__container-image {
 		position: relative;
 		right: 20rem;
+	}
+
+	.overlay-box__whoareyou {
+		box-sizing: border-box;
+		padding: 3rem 2rem 3rem 2rem;
+		width: 90%;
+	}
+
+	.overlay-box__whoareyou h1 {
+		font-size: 1.7rem;
+	}
+
+	.overlay-box__whoareyou  .sign-up__back {
+		bottom: 4.8rem;
+	}
+
+	#watchlater {
+		z-index: 100;
+	}
+
+	#playbutton {
+		z-index: 100;
+		top: 55%;
 	}
 
 	#presentation {
